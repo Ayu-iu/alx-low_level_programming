@@ -3,8 +3,10 @@
 
 /**
  * main - Entry point
+ *
  * Description: print all letters of the alphabet
- * Retrun: Always 0 (success)
+ *
+ * Return: Always 0 (success)
  */
 
 int main(void)
