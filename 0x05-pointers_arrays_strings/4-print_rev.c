@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_rev - prints a string in rev 
+ * print_rev - prints a string in rev
  * @s: string to input
  * Return: no return
  */
