@@ -18,11 +18,17 @@ int main(void)
 				putchar((num1 % 10) + '0');
 				putchar((num2 % 10) + '0');
 				putchar((num3 % 10) + '0');
-				putchar(44);
-				putchar(32);
+
+				if (num1 != 7)
+				{
+					putchar(44);
+					putchar(32);
+				}
+				else
+					continue;
 			}
 		}
 	}
-	putchar(10);
+	putchar (10);
 	return (0);
 }
