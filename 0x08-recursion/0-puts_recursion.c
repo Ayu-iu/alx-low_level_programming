@@ -1,12 +1,13 @@
-#include"main.h"
+#include "main.h"
 
 /*
- * lets write a fun printing a string
+ * _puts_recursion prints the string then a new line
  * @s: character string to print
  *
  *
- * Retur: Always 0
+ * Return: Always 0
  */
+
 
 void _puts_recursion(char *s)
 {
