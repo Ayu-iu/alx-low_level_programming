@@ -10,9 +10,9 @@
 
 int is_prime_helper(int n, int i)
 {
-	if(i * i > n)
+	if (i * i > n)
 		return (1);
-	if(n % i == 0)
+	if (n % i == 0)
 		return (0);
 	return (is_prime_helper(n, i + 2));
 }
