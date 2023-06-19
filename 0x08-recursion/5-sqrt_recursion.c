@@ -2,6 +2,7 @@
 #include <math.h>
 
 /**
+ * _sqrt_helper - Helper function for computing the sqrt of a num
  * _sqrt_recursion - returns the natural sqrt of a num
  * @n: the num its sqrt is supposed to be returend of
  * @low: The lowest possible square root of n
