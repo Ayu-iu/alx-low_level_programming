@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Prints the minimum number of coins to make change for an amount of money
+ * main - Print the min-num of coins to make change for an amount of money
  * @argc: The number of command-line arguments
  * @argv: An array of command-line argument strings
  *
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	
+
 	coins += cents / 25;
 	cents %= 25;
 
