@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * wildcmp - Compares two strings and returns 1 if they can be considered identical
+ * wildcmp - Compares two strings if they're identical
  * @s1: The first string to compare
  * @s2: The second string to compare
  *
