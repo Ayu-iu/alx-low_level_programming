@@ -1,24 +1,7 @@
-#include <unistd.h>
-#include "main.h"
+#include <stdio.h>
 
 /**
- * _puts - Prints a string to stdout
- * @str: The string to be printed
- */
-
-void _puts(char *str)
-{
-        int i;
-
-        for (i = 0; str[i] != '\0'; i++)
-        {
-                _putchar(str[i]);
-        }
-        _putchar('\n');
-}
-
-/**
- * main - Entry point
+ * main - Prints the name of the program
  * @argc: The number of command-line arguments
  * @argv: An array of command-line argument strings
  *
@@ -27,23 +10,15 @@ void _puts(char *str)
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i = 0;
+
+	(void)argc;
 	
-	for (i = 0; i < argc; i++)
+	while (argv[0][i] != '\0')
 	{
-		_puts(argv[i]);
+		putchar(argv[0][i]);
+		i++;
 	}
-	return (0);
-}
-
-/**
- * _putchar - Writes a character to stdout
- * @c: The character to be written
- *
- * Return: 1 on success, -1 on error
- */
-
-int _putchar(char c)
-{
-        return (write(1, &c, 1));
+	putchar('\n');
+	return 0;
 }
