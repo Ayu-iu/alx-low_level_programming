@@ -32,7 +32,8 @@ int _sqrt_helper(int n, int low, int high)
 	}
 }
 
-/** _sqrt_recursion(int n) - returns the natural sqrt of a num 
+/**
+ * _sqrt_recursion - returns the natural sqrt of a num
  *
  */
 
