@@ -7,5 +7,6 @@
 int main(int argc, char *argv[]);
 int _putchar(char c);
 void _puts(char *str);
+int is_positive_number(char *str);
 
 #endif
