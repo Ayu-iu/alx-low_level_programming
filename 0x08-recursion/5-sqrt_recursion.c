@@ -3,7 +3,6 @@
 
 /**
  * _sqrt_helper - Helper function for computing the sqrt of a num
- * _sqrt_recursion - returns the natural sqrt of a num
  * @n: the num its sqrt is supposed to be returend of
  * @low: The lowest possible square root of n
  * @high: The highest possible square root of n
@@ -32,6 +31,10 @@ int _sqrt_helper(int n, int low, int high)
 		return (_sqrt_helper(n, low, mid - 1));
 	}
 }
+
+/** _sqrt_recursion(int n) - returns the natural sqrt of a num 
+ *
+ */
 
 int _sqrt_recursion(int n)
 {
