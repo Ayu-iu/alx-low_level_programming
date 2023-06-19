@@ -34,7 +34,9 @@ int _sqrt_helper(int n, int low, int high)
 
 /**
  * _sqrt_recursion - returns the natural sqrt of a num
+ * @n: num its sqrt to be returned of
  *
+ * Return: -1 if n doesn't have natural sqrt, else its natural sqrt
  */
 
 int _sqrt_recursion(int n)
