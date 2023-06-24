@@ -6,7 +6,7 @@
  * strtow - split a string into words
  * @str: the string to be splited \ /
  *
- * Return : pointer to an arry of z strings, NULL on failure :/
+ * Return: pointer to an arry of z strings, NULL on failure :/
  */
 
 char **strtow(char *str)
