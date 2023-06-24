@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /** 
  * strtow - split a string into words
@@ -13,22 +14,22 @@ char **strtow(char *str)
 	int i;
 	int j;
 	int k;
-	int lgth;
+	int len;
 	int words;
 	char **arr;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	lgth = strlgth(str);
+	len = strlen(str);
 	words = 0;
 
-	for (i = 0; i < lgth; i++)
+	for (i = 0; i < len; i++)
 	{
 		while (str[k] == ' ')
 			k++;
-		lgth = 0;
+		len = 0;
 		for (j = k; str[j] && str[j] != ' '; j++)
-			lgth++;
+			len++;
 		arr[i] = malloc(sizeof(char) * (len + 1));
 
 		if (arr[i] == NULL)
@@ -39,7 +40,7 @@ char **strtow(char *str)
 			return (NULL);
 		}
 
-		for (j = 0; j < lgth; j++, k++)
+		for (j = 0; j < len; j++, k++)
 			arr[i][j] = str[k];
 
 		arr[i][j] = '\0';
