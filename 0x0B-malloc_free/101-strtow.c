@@ -11,11 +11,10 @@
 
 char **strtow(char *str)
 {
-	int i;
+	int i, words;
 	int j;
 	int k;
-	int len;
-	int words;
+	int len
 	char **arr;
 
 	if (str == NULL || *str == '\0')
