@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-/** 
+/**
  * strtow - split a string into words
- * @str; the string to be splited \ /
+ * @str: the string to be splited \ /
  *
- * Return : pointer --> to an arry of z strings, NULL on failure :/
+ * Return : pointer to an arry of z strings, NULL on failure :/
  */
 
 char **strtow(char *str)
@@ -27,7 +27,7 @@ char **strtow(char *str)
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 			words++;
 	}
-	
+
 	arr  = malloc(sizeof(char *) * (words + 1));
 	if (arr == NULL)
 		return (NULL);
@@ -40,16 +40,15 @@ char **strtow(char *str)
 		len = 0;
 		for (j = k; str[j] && str[j] != ' '; j++)
 			len++;
-		
+
 		arr[i] = malloc(sizeof(char) * (len + 1));
 		if (arr[i] == NULL)
 		{
-			for (i--; i >=0; i--)
+			for (i--; i >= 0; i--)
 				free(arr[i]);
 			free(arr);
 			return (NULL);
 		}
-
 		for (j = 0; j < len; j++, k++)
 			arr[i][j] = str[k];
 		arr[i][j] = '\0';
