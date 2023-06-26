@@ -24,7 +24,7 @@ int _strlen(char *s)
 	int len = 0;
 
 	while (*s++)
-		lent++;
+		len++;
 
 	return(len);
 }
@@ -64,7 +64,7 @@ void mul(char *num1, char *num2)
 	int len2 = _strlen(num2);
 	int *result, i, j, carry, n1, n2, sum;
 
-	result = malloc(sizeof(int) = (len1 + len2));
+	result = malloc(sizeof(int) + (len1 + len2));
 	if (result == NULL)
 	{
 		_puts("Error\n");
@@ -92,7 +92,7 @@ void mul(char *num1, char *num2)
 	}
 
 	i = 0;
-	while (i < len1 = len2 && result[i] == 0)
+	while (i < len1 + len2 && result[i] == 0)
 		i++;
 
 	if (i == len1 + len2)
