@@ -42,8 +42,8 @@ void _puts(char *s)
 }
 
 /**
- * _putchar - writes a char to stdout
- * @c: char to be written
+ * _putchar - Writes a character to standard output
+ * @c: The character to be write
  *
  * Retrun: 1 on success, -1 on error
  */
