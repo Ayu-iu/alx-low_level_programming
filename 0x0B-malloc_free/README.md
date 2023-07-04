@@ -1,1 +1,0 @@
-Now unto memory allocations
