@@ -1,40 +1,22 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include <stdlib.h>
+#include <string.h>
 
-#define _GNU_SOURCE
+/**
+ * get_filename - gets the file it was compiled from
+ * Return: the file name
+ */
 
-#include <stdio.h>
-
-void print_filename(void);
-
-#endif
-
-#include "filename.h"
-
-void print_filename(void)
+char *get_filename(void)
 {
-	FILE *fp = fopen("/proc/self/cmdline", "r");
-	if (fp != NULL)
+	const char *file = __FILE__;
+	size_t len = strlen(file);
+	char *filename = malloc((len + 1) * sizeof(char));
+
+	if (filename != NULL)
 	{
-		char buffer[256];
-		size_t bytesRead = fread(buffer, sizeof(char), sizeof(buffer) -1, fp);
-		if (bytesRead > 0)
-		{
-			buffer[bytesRead] = '\0';
-			char *filename = strrchr(buffer, '/');
-			if (filename != NULL)
-			{
-				printf("%s\n", filename + 1);
-			}
-		}
-		fclose(fp);
+		memcpy(filename, file, len);
+		filename[len] = '\0';
 	}
-}
 
-#include "main.h"
-
-int main(void)
-{
-	print_filename();
-	return 0;
+	return (filename);
 }
