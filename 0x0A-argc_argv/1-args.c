@@ -12,7 +12,7 @@ int count_arguments(int argc) {
     return (argc - 1);
 }
 
-int main(int argc) 
+int main(int argc, '\0') 
 {
     printf("%d\n", count_arguments(argc));
     return (0);
