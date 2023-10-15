@@ -5,7 +5,7 @@
  * @n: the num its sqer is supposed to be returned of
  * @low: the lowest possible sqrt of n
  * @high: the highest possible sqrt of n
- * 
+ *
  * Return: -1 if n doesn't have natural sqrt, else its natural sqrt
 */
 
@@ -40,7 +40,7 @@ return (_sqrt_helper(n, low, mid - 1));
 
 int _sqrt_recursion(int n)
 {
-if ( n < 0)
+if (n < 0)
 {
 return (-1);
 }
