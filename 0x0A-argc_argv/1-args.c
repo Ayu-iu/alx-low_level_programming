@@ -11,9 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-(void)argv;
-
 int count;
+(void)argv;
 
 count = argc - 1;
 
