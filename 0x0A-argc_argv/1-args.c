@@ -12,7 +12,11 @@
 int main(int argc, char *argv[])
 {
 (void)argv;
-int count = argc - 1;
+
+int count;
+
+count = argc - 1;
+
 printf("%d\n", count);
 return (0);
 }
