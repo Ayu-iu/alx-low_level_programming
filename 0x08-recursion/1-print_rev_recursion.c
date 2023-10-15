@@ -2,7 +2,7 @@
 
 /**
  * _print_rev_recursion - prints z string in rev
- * @s: string to be printed in reverse 
+ * @s: string to be printed in reverse
  * Return as always void -_-
 */
 
