@@ -1,0 +1,1 @@
+All about statics. Not the Electricity kind tho
