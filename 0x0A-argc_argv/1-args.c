@@ -4,7 +4,7 @@
 /**
  * main - prints the num of args passed into z program
  * @argc: the num of comandline args
- * 
+ *
  * Return: as always 0
  */
 
