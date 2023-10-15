@@ -11,30 +11,30 @@
 
 int _sqrt_helper(int n, int low, int high)
 {
-    int mid = (low + high) / 2;
+int mid = (low + high) / 2;
 
-    if (low > high)
-    {
-        return (-1);
-    }
-    if (mid * mid == n)
-    {
-        return (mid);
-    }
-    else if (mid * mid < n)
-    {
-        return (_sqrt_helper(n, mid + 1, high));
-    }
-    else 
-    {
-        return (_sqrt_helper(n, low, mid - 1));
-    }
+if (low > high)
+{
+return (-1);
+}
+if (mid * mid == n)
+{
+return (mid);
+}
+else if (mid * mid < n)
+{
+return (_sqrt_helper(n, mid + 1, high));
+}
+else
+{
+return (_sqrt_helper(n, low, mid - 1));
+}
 }
 
 /**
  * _sqrt_recursion - returns the natural sqrt of a num
  * @n: num its sqrt to be returned of
- * 
+ *
  * Return: -1 if n doesn't have natural sqrt, else its natural sqrt
 */
 
