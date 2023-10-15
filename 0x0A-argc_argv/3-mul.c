@@ -4,25 +4,24 @@
  * main - multiplies two nums
  * @argc: the num of cmd args gee
  * @argv: an array of cmd arg string too
- * 
+ *
  * Return: 0 if sucess, 1 if error
 */
 
 int main(int argc, char *argv[])
 {
-    int num1, num2, result;
+int num1, num2, result;
+if (argc != 3)
+{
+printf("Error\n");
+return (1);
+}
 
-    if (argc != 3)
-    {
-        printf("Error\n");
-        return (1);
-    }
-    
-    num1 = atoi(argv[1]);
-    num2 = atoi(argv[2]);
-    result = num1 * num2;
+num1 = atoi(argv[1]);
+num2 = atoi(argv[2]);
+result = num1 * num2;
 
-    printf("%d\n", result);
+printf("%d\n", result);
 
-    return (0);
+return (0);
 }
