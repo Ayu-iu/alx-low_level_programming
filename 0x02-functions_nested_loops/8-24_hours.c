@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 void print_time(int hour, int minute);
 
