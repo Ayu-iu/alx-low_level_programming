@@ -1,38 +1,42 @@
 #include "main.h"
 
 /**
- * is_prime_helper - helper function for is_prime_number
- * @n: the num to check
- * @i: the currnet divisor to check
- * 
- * Rertun: 1 if n is prime, 0 otherwise
+ * is_prime_recursive - checks if a number is prime usin recursion
+ * @n: the num to be checked
+ * @i: the divisor to be checked
+ * @w: the increment valure for the divisor
+ * Return: 1 if n is indeed prime oterwise 0
 */
-
-int is_prime_helper(int n, int i)
+int is_prime_recursive(int n, int i, int w)
 {
-    if (i * 1 > n)
-    return (1);
-    if (n % i == 0)
-    return (0);
-    
-    return (is_prime_helper(n, i + 2));
+i += w;
+w = 6 - w;
+
+if (i *i > n)
+return (1);
+if (n % i == 0)
+return (0);
+return (is_prime_recursive(n, i, w));
 }
 
 /**
  * is_prime_number - cheks if a number is prime or not
  * @n: the num to be checked
- * 
+ *
  * Return: 1 if n is indeed prime oterwise 0
 */
 
 int is_prime_number(int n)
 {
-    if (n <= 1)
-    return (0);
-    if (n == 2)
-    return (1);
-    if (n % 2 == 0)
-    return (0);
+int i = 5;
+int w = 2;
 
-    return (is_prime_helper(n, 3));
+if (n <= 1)
+return (0);
+if (n == 2 || n == 3)
+return (1);
+if (n % 2 == 0 || n % 3 == 0)
+return (0);
+return (is_prime_recursive(n, i, w));
 }
+

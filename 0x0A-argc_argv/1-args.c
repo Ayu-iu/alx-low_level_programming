@@ -4,16 +4,18 @@
 /**
  * main - prints the num of args passed into z program
  * @argc: the num of comandline args
- * 
- * Return: as always 0
+ * @argv: array of strings containg the args
+ *
+ * Return: as always 0 on sucess
  */
 
-int count_arguments(int argc) {
-    return (argc - 1);
-}
-
-int main(int argc, '\0') 
+int main(int argc, char *argv[])
 {
-    printf("%d\n", count_arguments(argc));
-    return (0);
+int count;
+(void)argv;
+
+count = argc - 1;
+
+printf("%d\n", count);
+return (0);
 }
