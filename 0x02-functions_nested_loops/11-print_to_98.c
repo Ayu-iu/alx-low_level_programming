@@ -10,12 +10,12 @@
 
 void print_to_98(int n)
 {
-    int n;
-    for (n >= 0 || n <=98; n++)
+    int j;
+    for (j = n;  j >= 0 && j <= 98; j++)
     {
-        _putchar(n + '0');
+        _putchar(j + '0');
 
-        if (n < 98)
+        if (j < 98)
         {
             _putchar(", ");
         }
