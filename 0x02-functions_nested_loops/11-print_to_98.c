@@ -10,13 +10,13 @@
 void print_to_98(int n)
 {
 int j;
-for (j = n; j <= '98'; j++)
+for (j = n; j <= 98; j++)
 {
-if (j >= '0' && j <= '9')
+if (j >= 0 && j <= 9)
 {
 _putchar(j + '0');
 }
-if (j < '98')
+if (j < 98)
 {
 _putchar(',');
 _putchar(' ');
